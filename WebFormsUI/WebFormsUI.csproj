@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8F50969-1D14-47A0-9D21-D622B3183F1A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Mağaza</RootNamespace>
+    <AssemblyName>Mağaza</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\buzza\OneDrive\Masaüstü\application\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>BC5E6078A60A80D07E2E7E414131D42B28B5DE0E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WebFormsUI_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v22.2.Export, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2.UI, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v22.2.Extensions, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v22.2.Core.Desktop, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DepoAditUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepoAditUI.Designer.cs">
+      <DependentUpon>DepoAditUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepoUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepoUI.Designer.cs">
+      <DependentUpon>DepoUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog.Designer.cs">
+      <DependentUpon>Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogsShow.cs" />
+    <Compile Include="EmployeeAditUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeAditUI.Designer.cs">
+      <DependentUpon>EmployeeAditUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDisplayUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDisplayUI.Designer.cs">
+      <DependentUpon>EmployeeDisplayUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpensesUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpensesUI.Designer.cs">
+      <DependentUpon>ExpensesUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntOutDepoAditUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntOutDepoAditUI.Designer.cs">
+      <DependentUpon>IntOutDepoAditUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntOutDepoUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntOutDepoUI.Designer.cs">
+      <DependentUpon>IntOutDepoUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginUI.Designer.cs">
+      <DependentUpon>LoginUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDetaylarUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderDetaylarUI.Designer.cs">
+      <DependentUpon>OrderDetaylarUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderUI.Designer.cs">
+      <DependentUpon>OrderUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PriceDisplayUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PriceDisplayUI.Designer.cs">
+      <DependentUpon>PriceDisplayUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductAditUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductAditUI.Designer.cs">
+      <DependentUpon>ProductAditUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDisplayUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductDisplayUI.Designer.cs">
+      <DependentUpon>ProductDisplayUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeUI.Designer.cs">
+      <DependentUpon>HomeUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportUI.Designer.cs">
+      <DependentUpon>ReportUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnUI.Designer.cs">
+      <DependentUpon>ReturnUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaleUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaleUI.Designer.cs">
+      <DependentUpon>SaleUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAditUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAditUI.Designer.cs">
+      <DependentUpon>UserAditUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDisplayUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDisplayUI.Designer.cs">
+      <DependentUpon>UserDisplayUI.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DepoAditUI.resx">
+      <DependentUpon>DepoAditUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepoUI.resx">
+      <DependentUpon>DepoUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog.resx">
+      <DependentUpon>Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeAditUI.resx">
+      <DependentUpon>EmployeeAditUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeDisplayUI.resx">
+      <DependentUpon>EmployeeDisplayUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpensesUI.resx">
+      <DependentUpon>ExpensesUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntOutDepoAditUI.resx">
+      <DependentUpon>IntOutDepoAditUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntOutDepoUI.resx">
+      <DependentUpon>IntOutDepoUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginUI.resx">
+      <DependentUpon>LoginUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderDetaylarUI.resx">
+      <DependentUpon>OrderDetaylarUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderUI.resx">
+      <DependentUpon>OrderUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PriceDisplayUI.resx">
+      <DependentUpon>PriceDisplayUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductAditUI.resx">
+      <DependentUpon>ProductAditUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductDisplayUI.resx">
+      <DependentUpon>ProductDisplayUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeUI.resx">
+      <DependentUpon>HomeUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportUI.resx">
+      <DependentUpon>ReportUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnUI.resx">
+      <DependentUpon>ReturnUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaleUI.resx">
+      <DependentUpon>SaleUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAditUI.resx">
+      <DependentUpon>UserAditUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDisplayUI.resx">
+      <DependentUpon>UserDisplayUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="WebFormsUI_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{32ACFBAF-CEE9-446F-B43E-C3B422C22E83}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{dc243662-f5da-4145-bca7-dddbb3cac610}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{8DCABA7C-32AB-421F-B7C4-B36C611A3079}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cmder_purple.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.NetCore.DesktopRuntime.7.0.x86">
+      <Visible>False</Visible>
+      <ProductName>.NET Desktop Runtime 7.0.4 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SqlLocalDB.13.2">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2016 Express LocalDB</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SqlLocalDB.14.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2017 Express LocalDB</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SqlLocalDB.15.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2019 Express LocalDB</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
